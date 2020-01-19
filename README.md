@@ -1,7 +1,7 @@
 # SSIS-Helpers
 These are helpful functions to have in an SSIS data flow script task.  
 
-1. Be sure to set SSIS data fields as read/write in properties of script task .  
+1. Be sure to set SSIS data fields as read/write in properties of script task.  
 2. Add Extensions.cs and ReplaceNullsResult.cs to script task project.
 
 This function eliminates the need to check every data field for a null with _IsNull.  For projects with a lot of data fields, this can be a pain and makes the code hard to read.
