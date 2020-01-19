@@ -6,7 +6,7 @@ These are helpful functions to have in an SSIS data flow script task.
 
 This function eliminates the need to check every data field for a null with _IsNull.  For projects with a lot of data fields, this can be a pain and makes the code hard to read.
 
-Eliminates this error:  *"Script Component: RunTime Error  The column has NULL Value"*
+Eliminates this error:  *"Script Component: RunTime Error  The column has a NULL Value"*
 
 You can edit the default value for each datatype in Extensions.cs.  
 
