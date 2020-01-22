@@ -43,15 +43,15 @@ public static class Extensions
             try
             {
                 //If Null
-                if ((bool)NullCheck.GetValue(inputBuffer))
+                if ((bool)NullCheck.GetValue(inputBuffer, null))
                     if (ActualPropertyType == typeof(string))
-                        ActualProperty.SetValue(inputBuffer, "");
+                        ActualProperty.SetValue(inputBuffer, "", null);
                     else if (ActualPropertyType == typeof(Int32))
-                        ActualProperty.SetValue(inputBuffer, 0);
+                        ActualProperty.SetValue(inputBuffer, 0, null);
                     else if (ActualPropertyType == typeof(DateTime))
-                        ActualProperty.SetValue(inputBuffer, new DateTime(0));
+                        ActualProperty.SetValue(inputBuffer, new DateTime(0), null);
                     else if (ActualPropertyType == typeof(bool))
-                        ActualProperty.SetValue(inputBuffer, false);
+                        ActualProperty.SetValue(inputBuffer, false, null);
             }
             catch (Exception ex)
             {
